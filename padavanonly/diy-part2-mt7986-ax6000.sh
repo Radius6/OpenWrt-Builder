@@ -84,12 +84,7 @@ sed -i 's/root:::0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.::0:99999:7
 sed -i 's/192.168.6.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 # 添加编译时间到版本信息
 sed -i "s/DISTRIB_DESCRIPTION='.*'/DISTRIB_DESCRIPTION='${REPO_NAME} ${OpenWrt_VERSION} ${OpenWrt_ARCH} Built on $(date +%Y%m%d)'/" package/base-files/files/etc/openwrt_release
-# 修改wifi名称（mtwifi-cfg）
-sed -i 's/ImmortalWrt-2.4G/Home-2.4G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-sed -i 's/ImmortalWrt-5G/Home-5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-# 修改wifi默认密码'password'（mtwifi-cfg）
-sed -i 's/encryption=none/encryption=psk2/' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-sed -i "/encryption=psk2/a\\\t\t\t\t\tset wireless.default_\${dev}.key=password" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+
 
 #### 新增
 # sing-box内核支持
