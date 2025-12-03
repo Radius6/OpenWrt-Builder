@@ -70,9 +70,7 @@ function git_sparse_clone() {
 
 ##########################
 config_del TARGET_MULTI_PROFILE
-config_del TARGET_DEVICE_mediatek_mt7986_DEVICE_glinet_gl-mt6000
-config_del TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6086
-config_del TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088
+
 config_del TARGET_DEVICE_mediatek_mt7986_DEVICE_jdcloud_re-cp-03
 config_del TARGET_ROOTFS_INITRAMFS
 config_del TARGET_INITRAMFS_COMPRESSION_NONE
