@@ -8,8 +8,8 @@ on:
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-24.10
   REPO_NAME: immortalwrt
-  REPO_BRANCH: mt798x-mt799x-6.6-mtwifi
-  OpenWrt_VERSION: 24.10
+  REPO_BRANCH: master
+  OpenWrt_VERSION: mt798x-mt799x-6.6-mtwifi
   OpenWrt_ARCH: mt7986
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
